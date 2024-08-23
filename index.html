@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexara</title>
+    <style>
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #000216, #002040);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header h2 {
+            font-size: 24px;
+            color: white;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 20px 0 60px;
+        }
+
+        .highlight {
+            color: #2b8cff;
+        }
+
+        .code-container {
+            background-color: #181024;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 900px;
+            padding: 10px;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .code-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .light-strip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            padding: 5px;
+            background: linear-gradient(45deg, #2b8cff, #104070);
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            width: 50px;
+            height: 50px;
+            background-color: #181024;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .buttons a img {
+            width: 24px;
+            height: 24px;
+            z-index: 1;
+        }
+
+        .buttons a:hover {
+            background-color: #2b8cff;
+        }
+
+        .button-light-strip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            padding: 2px;
+            background: linear-gradient(45deg, #2b8cff, #104070);
+            box-sizing: border-box;
+            z-index: 0;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 50px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background-color: #2b8cff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #1f6bbf;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #104070;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h2>NEXARA</h2>
+    </header>
+
+    <h1>NEXARA</h1>
+    <p>The first & best external script utility after <span class="highlight">byfron</span></p>
+
+    <div class="code-container">
+        <div class="light-strip"></div>
+        <img src="your-code-image.png" alt="Code Example">
+    </div>
+
+    <div class="buttons">
+        <a href="https://discord.gg/4xfJAMefwE" target="_blank">
+            <div class="button-light-strip"></div>
+            <img src="discord.png" alt="Discord">
+        </a>
+        <a href="https://telegram.org" target="_blank">
+            <div class="button-light-strip"></div>
+            <img src="telegram.png" alt="Telegram">
+        </a>
+        <a href="https://your-download-link.com" target="_blank">
+            <div class="button-light-strip"></div>
+            <img src="downloads.png" alt="Download">
+        </a>
+    </div>
+
+    <a href="mailto:contact@solara.com" class="contact-button">Contact</a>
+
+    <footer>&copy; 2024 Solara by CMD Softworks</footer>
+
+</body>
+
+</html>
